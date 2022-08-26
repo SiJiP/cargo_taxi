@@ -1,0 +1,1266 @@
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #CEF266;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: #2DD19A;
+    text-decoration: none;
+}
+
+.hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #CEF266;
+    color: #2DD19A;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    text-decoration: none;
+}
+
+.hvr-shutter-out-horizontal:hover,
+.hvr-shutter-out-horizontal:focus,
+.hvr-shutter-out-horizontal:active {
+    color: #2DD19A;
+}
+
+.hvr-shutter-out-horizontal:hover:before,
+.hvr-shutter-out-horizontal:focus:before,
+.hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/***********************************************************/
+
+
+#main-body {
+    overflow-x: hidden;
+    padding-top: 3rem;
+}
+
+form label {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+.phone {
+    color: #2DD19A;
+    font-weight: 600;
+    text-align: center;
+}
+
+.phone:hover {
+    color: #CEF266;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-block {
+    position: relative;
+    height: 240px;
+    display: block;
+}
+
+.main-block::after {
+    content: "";
+    background: url(../image/main-background.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-origin: inherit;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+.main-text {
+    position: inherit;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.0rem;
+}
+
+.main-text-base-last {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.main-text-base-last:hover {
+    color: #2DD19A;
+    text-decoration: none;
+}
+
+.main-stripe {
+    background-color: #CEF266;
+    width: 500px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 50%;
+}
+
+#left-stripe {
+    left: -470px;
+}
+
+#right-stripe {
+    right: -470px;
+}
+
+.button-base {
+    background-color: transparent;
+    border: 3px solid #CEF266;
+    color: black;
+    border-radius:0;
+    padding: 0.4rem;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    font-weight: 400;
+    cursor: pointer;
+    width: max-content;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    z-index: 10;
+}
+
+.button-base:hover {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#button-base-main {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.service {
+    margin: 5rem auto;
+    display: block;
+    margin-left: 15px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+.service-all-text {
+    position: inherit;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+    max-width: 350px;
+    z-index: 100;
+}
+
+.article-text {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.article-header {
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+#button-service {
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+#info-block {
+    display: block;
+    max-width: 280px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 3rem auto;
+    font-weight: 300;
+}
+
+.grey-header {
+    background-color: #2DD19A;
+    padding: 0.5rem;
+}
+
+.grey-header-text {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.info-list {
+    padding: 1rem 2rem;
+}
+
+/*Блок транспорту*/
+.vehicles {
+    padding: 3rem;
+    background-color: #2DD19A;
+}
+
+#our-vehicles {
+    margin: 1rem auto;
+}
+
+#gallery-border {
+    max-width: 400px;
+    height: 300px;
+    margin: 1.5rem auto;
+}
+
+#carousel-indicator {
+    margin-right: -100px;
+}
+
+.vehicles-all-text {
+    max-width: 350px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.carousel-item h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.carousel-item p {
+    font-size: 0.875rem;
+}
+
+.car-img {
+    margin-top: 20%;
+}
+
+#our-vehicles {
+    margin-bottom: 3rem;
+}
+
+.baggage {
+    padding: 6rem 0;
+}
+
+.baggage-border {
+    width: 100%;
+    padding: 1rem
+}
+
+.baggage-all-text {
+    background-color: #ffffff;
+    margin-top: -30px;
+    padding: 0 1rem;
+}
+
+#baggage-header {
+    position: relative;
+    z-index: 3;
+}
+
+#baggage-header::after {
+    content: '';
+    background-color: #CEF266;
+    top: 0;
+    left: 12px;
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    z-index: -1;
+}
+
+#icon-baggage {
+    margin: 0 auto;
+    width: 70px;
+}
+
+#snowboards {
+    max-width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#skibox {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#snowboards::after {
+    content: '';
+    width: 500px;
+    height: 75px;
+    top: 65px;
+    ;
+    left: 40px;
+    z-index: -1;
+    background-color: #CEF266;
+    display: block;
+    position: absolute;
+}
+
+#skibox::after {
+    content: '';
+    width: 500px;
+    height: 75px;
+    top: 300px;
+    right: 50px;
+    z-index: -1;
+    background-color: #CEF266;
+    display: block;
+    position: absolute;
+}
+
+/*блок з маршрутами*/
+
+.route {
+    background-color: #2DD19A;
+    padding: 6rem 0;
+
+}
+
+#route-header {
+    color: #ffffff;
+    font-size: 1.375rem;
+    padding: 0.5rem;
+    background-color: #2DD19A;
+    margin-top: -15px;
+    margin-left: 30px;
+    max-width: 150px;
+    z-index: 10;
+}
+
+.border-route {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.route-ticket {
+    width: 260px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    margin: 3rem auto;
+
+}
+
+.route-ticket-header {
+    font-weight: 300;
+    margin: 1rem auto;
+}
+
+
+
+/*//////////////////////////////////*/
+/*блок про нас*/
+.about-us {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.about-us::after {
+    content: '';
+    background-image: url(../image/background1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.about-us-block {
+    font-weight: 300;
+    text-align: center;
+    margin: 3rem auto;
+    margin-top: 25%;
+    position: relative;
+    height: 300px;
+}
+
+.about-us-numbers {
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.about-us-text {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    max-width: 250px;
+}
+
+#stripe-l-a::after {
+    content: '';
+    background-color: #CEF266;
+    height: 75px;
+    width: 500px;
+    left: -280px;
+    top: 40px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#stripe-r-a::after {
+    content: '';
+    background-color: #CEF266;
+    height: 75px;
+    width: 500px;
+    right: -280px;
+    top: 50px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Форма відгуку*/
+.feedback {
+    padding: 6rem 0;
+}
+
+.feedback-border {
+    padding: 3rem;
+    width: 100%;
+}
+
+.feedback-header {
+    margin-top: -55px;
+    background-color: #ffffff;
+    padding: 0 0.5rem;
+    max-width: 230px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#button-feedback {
+    margin: 1rem 0;
+}
+
+#validation-textarea {
+    height: 150px;
+}
+
+.question-border {
+    width: 100%;
+    padding: 3rem;
+    z-index: -1;
+}
+
+#button-question-block {
+    width: 165px;
+    margin: 0 auto;
+}
+
+.question {
+    margin: 6rem auto;
+}
+
+.question-header {
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    margin-top: -62px;
+    max-width: 250px;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+}
+
+#question-secondary-text {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 0.5rem;
+}
+
+
+/*****************************/
+/*відгуки всі*/
+.feed-block-header h3 {
+    font-size: 1.2rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.feed-block-header h3::after {
+    content: '';
+    background-color: #CEF266;
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: -300px;
+    z-index: -1;
+
+}
+
+.feed-block {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.feed-block::after {
+    content: '';
+    background-image: url(../image/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+.carousel {
+    z-index: 1;
+}
+
+.box {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.user-feed {
+    background-color: #2DD19A;
+
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    z-index: -2;
+    font-size: 0.8rem;
+}
+
+.carousel {
+    position: relative;
+}
+
+.top-stripe::after {
+    content: '';
+    background-color: #535353;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+.user-feed-comment {
+    width: 100%;
+    margin: 2rem auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #ffffff;
+    height: 200px;
+    display: table;
+    border: 5px solid #CEF266;
+    position: relative;
+}
+
+.quote {
+    color: #CEF266;
+    padding: 0.5rem;
+    background-color: #2DD19A;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.client {
+
+    margin: 0 auto;
+}
+
+.image-client {
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: #E4E6E7;
+
+
+}
+
+.comment {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #2DD19A;
+}
+
+.image-client img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.client-name {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+}
+
+.client-date {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.9rem;
+    position: relative;
+    text-align: center;
+
+}
+
+/*Футер*/
+.footer {
+    background-color: #2DD19A;
+    padding: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/*pop-up*/
+
+.pop-up-header{
+    background: #2DD19A;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.pop-up{
+    background-color: #ffffff;
+    max-width: 500px;
+    max-height: 500px;
+    z-index: 550;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: 10px solid #CEF266;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: hide;
+}
+
+
+
+
+
+/********************************************/
+
+/****************************/
+
+
+
+
+/*під галерею рамка адаптив*/
+@media (min-width: 350px) {
+    #gallery-border {
+        height: 400px;
+    }
+}
+
+@media (min-width: 400px) {
+    #gallery-border {
+        height: 450px;
+    }
+
+    #skibox::after {
+        right: 150px;
+    }
+}
+
+@media (min-width: 500px) {
+    #gallery-border {
+        height: 500px;
+    }
+}
+
+/*//////////////////////////////////////////////*/
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media (min-width: 576px) {
+
+    .main-block {
+        height: 300px;
+    }
+
+    #left-stripe {
+        left: -380px;
+    }
+
+    #right-stripe {
+        right: -380px;
+    }
+
+    #main-text-secondary {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+        line-height: 0.9375rem;
+        letter-spacing: 0;
+    }
+
+    .main-text {
+        letter-spacing: 0.1rem;
+    }
+
+    .main-text-base-last {
+        font-size: 2rem
+    }
+
+    .baggage-border {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .border-route {
+        padding: 2rem;
+    }
+
+    #route-header {
+        margin-top: -40px;
+        margin-left: 0;
+    }
+
+    #stripe-l-a::after {
+        left: -180px;
+        top: 40px;
+    }
+
+
+    #stripe-r-a::after {
+        right: -150px;
+    }
+
+    .feedback-header {
+        font-size: 1.375rem;
+        max-width: 270px;
+    }
+
+    .question-header {
+        font-size: 1.375rem;
+        max-width: 290px;
+    }
+
+    .user-feed-comment {
+        width: 80%;
+    }
+
+    .blockquote {
+        font-size: 1rem;
+    }
+    .service {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service-all-text{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    .carousel-item h5{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .feedback-header{
+        margin-top: -45px;
+    }
+    .question-header{
+        margin-top: -52px;
+    }
+
+
+
+
+
+
+}
+
+/* Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 768px) {
+    .main-text {
+        font-size: 1rem;
+    }
+
+    .main-block {
+        height: 500px;
+    }
+
+    #left-stripe {
+        left: -330px;
+    }
+
+    #right-stripe {
+        right: -330px;
+    }
+
+    #button-base-main {
+        font-size: 1rem;
+    }
+
+    #main-text-secondary {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        line-height: 1.375rem
+    }
+
+    .main-text-base-last {
+        font-size: 3rem
+    }
+    
+    .service-all-text {
+        margin-top: -25%;
+        top: 50%;
+        margin-left: -10px;
+        padding: 1rem 0;
+    }
+
+    .car-img {
+        margin-top: 40%;
+    }
+
+    .baggage-all-text {
+        margin: 1rem;
+        margin-left: -10px;
+        padding: 1rem 0;
+        max-width: 330px;
+    }
+
+    #snowbords {
+        max-width: 300px;
+    }
+
+    #skibox {
+        max-width: 300px;
+    }
+
+    #snowbroads,
+    #skibox {
+        max-width: 300px;
+    }
+
+    #snowboard-img,
+    #skibox-img {
+        width: 300px;
+    }
+
+    #snowboards::after {
+        width: 500px;
+        height: 85px;
+        top: 110px;
+        left: 40px;
+    }
+
+    #skibox::after {
+        width: 1500px;
+        height: 85px;
+        top: 400px;
+        right: 50px;
+    }
+
+    #route-header {
+        max-width: 260px;
+        font-size: 1.5rem;
+    }
+
+    #stripe-l-a::after {
+        width: 500px;
+        left: -150px;
+        top: 5px;
+    }
+
+
+    #stripe-r-a::after {
+        width: 1000px;
+        left: -200px;
+        top: 100px;
+    }
+
+    .about-us::after {
+        top: -150px;
+        left: -150px;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+        z-index: -2;
+    }
+
+
+    .feedback-header {
+        font-size: 1.5rem;
+        max-width: 430px;
+    }
+
+    .question-header {
+        font-size: 1.5rem;
+        max-width: 310px;
+    }
+
+    .feed-block-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .feed-block-header h3::after {
+        top: 25px;
+    }
+}
+
+
+/* Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 992px) {
+    .main-text {
+        font-size: 1rem;
+    }
+
+    .main-block {
+        height: 600px;
+    }
+
+    #left-stripe {
+        left: -220px;
+        height: 75px;
+    }
+
+    #right-stripe {
+        right: -220px;
+        height: 75px;
+    }
+
+    #button-base-main {
+        font-size: 1rem;
+    }
+
+    .article-header {
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+
+    .article-text {
+        font-size: 1rem;
+    }
+
+    #info-block {
+        max-width: 380px;
+        font-size: 1.2rem;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        margin: 3rem auto;
+    }
+
+    .grey-header {
+        padding: 1rem;
+    }
+
+    .grey-header-text {
+        color: #ffffff;
+    }
+
+    .info-list {
+        padding: 2rem 3rem;
+    }
+
+    .car-img {
+        margin-top: 20%;
+    }
+
+    .about-us-numbers {
+        font-size: 5rem;
+    }
+
+    .about-us-text {
+        font-size: 1.3rem;
+    }
+
+    #stripe-l-a::after {
+        height: 100px;
+        width: 3500px;
+        left: -2950px;
+        top: 10px;
+    }
+
+
+    #stripe-r-a::after {
+        height: 100px;
+        width: 3500px;
+        left: -220px;
+        top: 130px;
+    }
+
+}
+
+
+
+
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1200px) {
+    .nav-link {
+        font-size: 1.125rem;
+    }
+
+    .phone {
+        font-size: 1.5rem;
+    }
+
+    .main-stripe {
+        width: 3000px;
+    }
+
+    .main-text {
+        font-size: 1.5rem;
+    }
+
+    .main-block {
+        height: 700px;
+    }
+
+    #left-stripe {
+        left: -2800px;
+        height: 75px;
+    }
+
+    #right-stripe {
+        right: -2800px;
+        height: 75px;
+    }
+
+    #button-base-main {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+    }
+
+    #main-text-secondary {
+        line-height: 1.875rem;
+        max-width: 550px;
+    }
+
+    .article-text {
+        font-size: 1.125rem;
+        font-weight: 300;
+        max-width: 350px;
+    }
+
+    .article-header {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    #button-service {
+        font-size: 1.125rem;
+    }
+
+    #info-block {
+        font-size: 1.5rem;
+    }
+
+    .grey-header {
+        padding: 1rem;
+    }
+
+    .grey-header-text {
+        color: #ffffff;
+    }
+
+    .info-list {
+        padding: 2rem 3rem;
+    }
+
+    .vehicles {
+        padding: 3rem;
+        background-color: #2DD19A;
+    }
+
+    #gallery-border {
+        max-width: 400px;
+        height: 535px;
+    }
+
+    #carousel-indicator {
+        margin-right: -100px;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.875rem;
+        margin-bottom: 0;
+    }
+
+    .carousel-item p {
+        font-size: 1.5rem;
+    }
+
+    .car-img {
+        margin-top: 20%;
+    }
+
+    #our-vehicles {
+        margin-bottom: 3rem;
+    }
+
+    #baggage-header::after {
+        top: 0;
+        left: 22px;
+        height: 50px;
+        width: 250px;
+        z-index: -1;
+    }
+
+    #snowbords {
+        max-width: 400px;
+    }
+
+    #skibox {
+        max-width: 400px;
+    }
+
+    #snowboards,
+    #skibox {
+        max-width: 400px;
+    }
+
+    #snowboard-img,
+    #skibox-img {
+        width: 400px;
+    }
+
+    #snowboards::after {
+        width: 3500px;
+        height: 100px;
+        top: 150px;
+        left: 40px;
+    }
+
+    #skibox::after {
+        width: 3500px;
+        height: 100px;
+        top: 530px;
+        right: 50px;
+    }
+
+    #route-header {
+        font-size: 2.5rem;
+        max-width: 420px;
+        margin-top: -50px;
+    }
+
+    .about-us-block {
+        height: 400px;
+    }
+
+    .about-us-numbers {
+        font-size: 6rem;
+    }
+
+    .about-us-text {
+        font-size: 1.5rem;
+    }
+
+    .about-us::after {
+        top: -100px;
+    }
+
+    .feedback-header {
+        font-size: 2.5rem;
+        max-width: 700px;
+        ;
+        margin-top: -60px;
+    }
+
+    .question-header {
+        font-size: 2.5rem;
+        max-width: 600px;
+        margin-top: -50px;
+    }
+
+    #question-secondary-text {
+        font-size: 1.5rem;
+    }
+
+    .feed-block-header h3 {
+        font-size: 2.5rem;
+    }
+
+    .feed-block-header h3::after {
+        height: 75px;
+        top: 10px;
+        width: 3500px;
+        left: -3100px;
+    }
+
+    .blockquote {
+        font-size: 1.2rem;
+    }
+
+    .client-name {
+        font-size: 1.2rem;
+    }
+
+    .client-date {
+        font-size: 1rem;
+    }
+
+    .feed-block {
+        padding: 6rem 0;
+    }
+}

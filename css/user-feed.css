@@ -1,0 +1,98 @@
+.user-feed {
+    background-color: #2DD19A;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    z-index: -2;
+}
+
+.carousel {
+    position: relative;
+}
+
+.top-stripe::after {
+    content: '';
+    background-color: #535353;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+.user-feed-comment {
+    width: 60%;
+    margin: 2rem auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #ffffff;
+    height: 200px;
+    display: table;
+    border: 5px solid #CEF266;
+    position: relative;
+}
+
+.quote {
+    color: #CEF266;
+    padding: 0.5rem;
+    background-color: #2DD19A;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.client {
+
+    margin: 0 auto;
+}
+
+.image-client {
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: #E4E6E7;
+
+
+}
+
+.comment {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #2DD19A;
+}
+
+.image-client img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.client-name {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.175rem;
+    position: relative;
+}
+
+.client-date {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+
+}

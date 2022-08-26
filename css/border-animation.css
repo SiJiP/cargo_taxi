@@ -1,0 +1,239 @@
+
+.border-animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.border-animation::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    animation: animate 3s linear forwards;
+    -webkit-animation: animate 3s linear forwards;
+    z-index: -1;
+}
+
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #CEF266;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #CEF266;
+        border-right-color: #CEF266;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #CEF266;
+        border-right-color: #CEF266;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+}
+
+/*/////////////////*/
+
+.border-animation::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    animation: animate2 3s linear forwards;
+    -webkit-animation: animate2 3s linear forwards;
+    animation-delay: 3s;
+    z-index: -1;
+}
+
+
+
+@keyframes animate2 {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #CEF266;
+    }
+
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #CEF266;
+        border-left-color: #CEF266;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #CEF266;
+        border-left-color: #CEF266;
+    }
+
+}
+
+
+/*//////////////////////////////////////////////////////*/
+
+
+.border-animation-dark {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.border-animation-dark::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    animation: animate-dark 3s linear forwards;
+    -webkit-animation: animate-dark 3s linear forwards;
+    z-index: -1;
+}
+
+
+@keyframes animate-dark {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #2DD19A; 
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #2DD19A;
+        border-right-color: 2DD19A5;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #2DD19A;
+        border-right-color: #2DD19A;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+}
+
+/*/////////////////*/
+
+.border-animation-dark::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    animation: animate2-dark 3s linear forwards;
+    -webkit-animation: animate2-dark 3s linear forwards;
+    animation-delay: 3s;
+    z-index: -1;
+}
+
+
+
+@keyframes animate2-dark {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #2DD19A;
+    }
+
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #2DD19A;
+        border-left-color: #2DD19A;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #2DD19A;
+        border-left-color: #2DD19A;
+    }
+
+}
+
+
+
+@media (min-width: 576px) {
+    .border-animation::before,
+    .border-animation-dark::before {
+        top: 10px;
+        left: 10px;
+    }
+    .border-animation::after,
+    .border-animation-dark::after {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .border-animation-dark {
+        height: 65%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .border-animation-dark {
+        height: 70%;
+    }
+}
+
+
