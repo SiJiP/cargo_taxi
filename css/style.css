@@ -11,7 +11,7 @@
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    color: #2DD19A;
+    color: white;
     text-decoration: none;
 }
 
@@ -23,8 +23,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #CEF266;
-    color: #2DD19A;
+    background: #2DD19A;
+    color: white;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 50%;
@@ -41,7 +41,7 @@
 .hvr-shutter-out-horizontal:hover,
 .hvr-shutter-out-horizontal:focus,
 .hvr-shutter-out-horizontal:active {
-    color: #2DD19A;
+    color: white;
 }
 
 .hvr-shutter-out-horizontal:hover:before,
@@ -51,7 +51,6 @@
     transform: scaleX(1);
 }
 /***********************************************************/
-
 
 #main-body {
     overflow-x: hidden;
@@ -144,16 +143,17 @@ form label {
 }
 
 .button-base {
-    background-color: transparent;
-    border: 3px solid #CEF266;
-    color: black;
+    background-color: #CEF266;
+    color: rgba(0, 0, 0, 0.8);
     border-radius:0;
-    padding: 0.4rem;
+    padding: 0.6rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     align-self: center;
     font-weight: 400;
     cursor: pointer;
     width: max-content;
+    border: none;
     -webkit-border-radius:0;
     -moz-border-radius:0;
     -ms-border-radius:0;
@@ -170,7 +170,7 @@ form label {
 }
 
 #button-base-main {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -263,6 +263,23 @@ form label {
 .carousel-item h5 {
     font-size: 1rem;
     margin-bottom: 0;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.marginTop-8rem {
+    margin-top: 8rem;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-inner {
+    height: 26.25rem;
 }
 
 .carousel-item p {
@@ -1088,7 +1105,7 @@ form label {
 
     #button-base-main {
         font-size: 1.3rem;
-        padding: 0.6rem;
+        padding: 1rem;
     }
 
     #main-text-secondary {
